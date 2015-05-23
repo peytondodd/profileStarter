@@ -1,13 +1,16 @@
-$('.getrecruited').on('click', function(){
-
-    console.log('clicked login');
-
+$(function(){
+  $('.getrecruited').on('click', function(){
 
 
-    $.loadmodal({
-        url: "/static/homepage/templates/index.signup.html",
-        width: '100%',
 
-    });
+
+      $.loadmodal({
+          url: "/homepage/index.signup/",
+          width: '100%',
+
+
+      });
+
+  });
 
 });

@@ -37,6 +37,32 @@
 }
 
 /* end button rows*/
+/*signup modal*/
+.errorlist{
+  margin-bottom: 0px;
+}
+
+.errorlist p{
+  margin-bottom: 0px;
+}
+
+.form-group{
+  height: 66px;
+  margin-bottom: 0px;
+}
+
+.help-block p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
+p.help-block{
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+
 
 .modal-dialog{
   margin: 30px auto;
@@ -46,3 +72,4 @@
 .modal-content{
   height: 95%;
 }
+/*signup modal*/
