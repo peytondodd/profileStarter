@@ -7,29 +7,38 @@
 <!DOCTYPE html>
 <html>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <head>
-    
+
     <title>homepage</title>
-    
+
     ## add any site-wide scripts or CSS here; for example, jquery:
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="/static/homepage/media/jquery.loadmodal.js"></script>
+
     ## render the css with the same name as this page
     ${ static_renderer.get_template_css(request, context)  }
-  
+
   </head>
   <body>
-  
-    <header>
-      Welcome to the homepage app!
-    </header>
-  
+
+
+
     <%block name="content">
       Site content goes here in sub-templates.
-    </%block>  
-  
+    </%block>
+
     ## render the JS with the same name as this page
     ${ static_renderer.get_template_js(request, context)  }
-  
+
   </body>
 </html>
