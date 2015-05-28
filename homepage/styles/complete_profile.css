@@ -1,0 +1,70 @@
+
+/*gender radio buttons*/
+  .guy{
+    margin-left: 60px;
+  }
+  .girl{
+    margin-right: 60px;
+  }
+/* end gender radio buttons*/
+
+/*Input box placeholder Styling*/
+
+
+::-webkit-input-placeholder {
+ font-size: 14px;
+ color: #d0cdfa;
+ text-transform: uppercase;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+}
+:-moz-placeholder { /* older Firefox*/
+ font-size:14px;
+ color: #d0cdfa;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+
+}
+::-moz-placeholder { /* Firefox 19+ */
+ font-size: 14px;
+ color: #d0cdfa;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+
+}
+:-ms-input-placeholder {
+ font-size: 14px;
+ color: #d0cdfa;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+
+}
+/*End Input box placeholder Styling*/
+
+/*center aligns labels on form*/
+.question{
+  text-align: center;
+}
+/*center aligns labels on form*/
+
+.state-placeholder{
+  font-size: 14px;
+  color: #d0cdfa;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#moneyForm{
+  padding-bottom: 60px;
+}
