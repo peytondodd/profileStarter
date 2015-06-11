@@ -37,7 +37,7 @@ def signup(request):
             user.email = form.cleaned_data['email']
             user.set_password(form.cleaned_data['password1'])
             user.save()
-            print(user)
+            # print(user)
             print('###############################created############################### ')
 
             return HttpResponse('''

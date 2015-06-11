@@ -18,13 +18,23 @@ $(function(){
 	})
 });
 
-$("#pips-range").Link('lower').to($("#value"), "text");
-
-
-
 $(".pips-range").noUiSlider_pips({
 	mode: 'range',
 	density: 5
 
 });
+
+$("#pips-range").Link('lower').to($("#value"), "text");
+
+$("#pips-range").Link('lower').to($("#gpa-value"),null,wNumb({
+
+  decimals: 1,
+
+}));
+
+
+
+
+
+
 });

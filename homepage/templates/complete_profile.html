@@ -7,172 +7,91 @@
   <!-- _________________________Heading_____________________________ -->
   <div class="container">
     <div class="row">
+      <form  method="post" action="/homepage/complete_profile">
+
       <div class="col-sm-12 question ">
         <h4>My first name is</h4>
-        <div class="form-group">
-          <input type="text" class="form-control" id="formGroupInputLarge" placeholder="Your first name here">
-          <p class="help-block"> </p>
+        <div class="form-group error-handling-form">
+          ${form['first']}
+          <p class="help-block " id="form-errors">  ${form['first'].errors} </p>
         </div>
       </div>
       <div class="col-sm-12 question ">
         <h4>and my last name is</h4>
         <div class="form-group">
-          <input type="text" class="form-control" id="formGroupInputLarge" placeholder="Your last name here">
-          <p class="help-block"> </p>
+          ${form['last']}
+          <p class="help-block" id="form-errors"> ${form['last'].errors} </p>
         </div>
+      </div>
+      <div class="col-sm-12 question ">
+        <h4>I'm looking for</h4>
+        ${form['job_or_internship']}
       </div>
       <div class="col-sm-12 question ">
         <h4>My phone number is </h4>
         <div class="form-group">
-          <input type="text" class="form-control" id="formGroupInputLarge" placeholder="(333) 333 4444">
-          <p class="help-block"> </p>
+          ${form['phone_number']}
+          <p class="help-block" id="form-errors"> ${form['phone_number'].errors} </p>
         </div>
       </div>
       <div class="col-sm-12 question ">
         <h4>I'm a</h4>
-        <label class="radio-inline girl">
-          <input type="radio" name="inlineRadioOptions " id="girl" value="option1"> Girl
-        </label>
-        <label class="radio-inline guy">
-          <input type="radio" name="inlineRadioOptions " id="guy" value="option2"> Guy
-        </label>
+        ${form['gender']}
       </div>
       <div class="col-sm-12 question ">
           <h4>and I'm from </h4>
         <div class="row">
 
         <div class="col-sm-6 col-xs-6">
-          <input type="text" class="form-control"  placeholder="hometown">
+          ${form['hometown']}
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-          <select name="state" class="form-control" >
-              <option><span class="state-placeholder">Home State</span></option>
-              <option value="AL">AL</option>
-              <option value="AK">AK</option>
-              <option value="AZ">AZ</option>
-              <option value="AR">AR</option>
-              <option value="CA">CA</option>
-              <option value="CO">CO</option>
-              <option value="CT">CT</option>
-              <option value="DE">DE</option>
-              <option value="DC">DC</option>
-              <option value="FL">FL</option>
-              <option value="GA">GA</option>
-              <option value="HI">HI</option>
-              <option value="ID">ID</option>
-              <option value="IL">IL</option>
-              <option value="IN">IN</option>
-              <option value="IA">IA</option>
-              <option value="KS">KS</option>
-              <option value="KY">KY</option>
-              <option value="LA">LA</option>
-              <option value="ME">ME</option>
-              <option value="MD">MD</option>
-              <option value="MA">MA</option>
-              <option value="MI">MI</option>
-              <option value="MN">MN</option>
-              <option value="MS">MS</option>
-              <option value="MO">MO</option>
-              <option value="MT">MT</option>
-              <option value="NE">NE</option>
-              <option value="NV">NV</option>
-              <option value="NH">NH</option>
-              <option value="NJ">NJ</option>
-              <option value="NM">NM</option>
-              <option value="NY">NY</option>
-              <option value="NC">NC</option>
-              <option value="ND">ND</option>
-              <option value="OH">OH</option>
-              <option value="OK">OK</option>
-              <option value="OR">OR</option>
-              <option value="PA">PA</option>
-              <option value="RI">RI</option>
-              <option value="SC">SC</option>
-              <option value="SD">SD</option>
-              <option value="TN">TN</option>
-              <option value="TX">TX</option>
-              <option value="UT">UT</option>
-              <option value="VT">VT</option>
-              <option value="VA">VA</option>
-              <option value="WA">WA</option>
-              <option value="WV">WV</option>
-              <option value="WI">WI</option>
-              <option value="WY">WY</option>
-          </select>
+          ${form['state']}
+
         </div>
         </div>
       </div>
       <div class="col-sm-12 question ">
         <h4>I'm going to school at</h4>
         <div class="form-group">
-          <input type="text" class="form-control" id="formGroupInputLarge" placeholder="Your University">
-          <p class="help-block"> </p>
+          ${form['school']}
+          <p class="help-block" id="form-errors">  ${form['school'].errors} </p>
         </div>
       </div>
       <div class="col-sm-12 question ">
         <h4>, and have been going there since</h4>
         <div class="form-group">
-            <select name="freshman-year" class="form-control" >
-                <option><span class="state-placeholder">year you started school</option>
-                <option value="2011">2011</option>
-                <option value="2011">2012</option>
-                <option value="2011">2013</option>
-                <option value="2011">2014</option>
-                <option value="2011">2015</option>
-            </select>
-          </div>
-        </div>
-      <div class="col-sm-12 question ">
-        <h4>I plan on graduating in</h4>
-        <div class="form-group">
-            <select name="grad-year" class="form-control" >
-                <option><span class="state-placeholder">year you plan on graduating in</span></option>
-                <option value="2011">I already graduated</option>
-                <option value="2011">2016</option>
-                <option value="2011">2017</option>
-                <option value="2011">2018</option>
-                <option value="2011">2019</option>
-            </select>
+          ${form['start_year']}
         </div>
       </div>
       <div class="col-sm-12 question ">
-        <h4>I'm looking for</h4>
-        <label class="radio-inline girl">
-          <input type="radio" name="inlineRadioOptions " id="girl" value="option1"> a job
-        </label>
-        <label class="radio-inline guy">
-          <input type="radio" name="inlineRadioOptions " id="guy" value="option2"> an internship
-        </label>
+        <h4>I plan on graduating in</h4>
+        <div class="form-group">
+          ${form['graduation_year']}
+        </div>
       </div>
       <div class="col-sm-12 question ">
         <h4>Here at BYU I'm pursuing my</h4>
         <div class="form-group">
-            <select name="degree" class="form-control" >
-                <option><span class="state-placeholder">Your Degree</option>
-                <option value="2011">Associates</option>
-                <option value="2011">Bachelor's</option>
-                <option value="2011">Master's</option>
-                <option value="2011">Doctorate</option>
-                <option value="2011">Other</option>
-            </select>
+          ${form['degree']}
         </div>
       </div>
       <div class="col-sm-12 question ">
         <h4>in</h4>
         <div class="form-group">
-          <input type="text" class="form-control" id="formGroupInputLarge" placeholder="type your major here">
-          <p class="help-block"> </p>
+          ${form['major']}
+          <p class="help-block" id="form-errors"> ${form['major'].errors} </p>
         </div>
       </div>
       <div class="col-sm-12 question ">            <h4>with a minor in</h4>
         <div class="form-group">
-          <input type="text" class="form-control" id="formGroupInputLarge" placeholder="type your minor here">
-          <p class="help-block"> </p>
+          ${form['minor']}
+          <p class="help-block" id="form-errors">  ${form['minor'].errors}</p>
         </div>
       </div>
       <div class="col-sm-12 question ">
         <h4>While going to BYU I maintained a GPA of</h4>
-        <form id="moneyForm">
+        <div class="form-group" id="moneyForm">
 
           <div>
             <h3  id="value"></h3>
@@ -181,23 +100,25 @@
           <div id="pips-range"class="pips-range">
             <!-- _________________________slider goes here_____________________________ -->
           </div>
+          ${form['gpa']}
 
-        </form>
+        </div>
       </div>
       <div class="col-sm-12 question ">
         <h4>Most people enjoy working with me because...</h4>
         <div class="form-group">
-          <textarea  class="form-control" id="comment" placeholder="tell us what makes you awesome"></textarea>
-          <p class="help-block"> </p>
+          ${form['why_im_awesome']}
+          <p class="help-block" id="form-errors">  ${form['why_im_awesome'].errors} </p>
         </div>
       </div>
       <div class="col-sm-12 question ">
         <div class="form-group">
-          <button  class="btn btn-primary btn-block btn-lg">Submit</button>
+          <button class="btn btn-primary btn-block btn-lg">Submit</button>
           <p class="help-block"> </p>
         </div>
       </div>
 
+      </form>
 
 
 
@@ -211,6 +132,7 @@
 
     </div>
   </div>
+
 
 
 </%block>
