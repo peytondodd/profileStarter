@@ -1,0 +1,5 @@
+.login-errors p{
+  margin: 0 0 10px 25px;
+  color: firebrick;
+  font-size: large;
+}

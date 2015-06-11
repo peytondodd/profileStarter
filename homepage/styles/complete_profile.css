@@ -1,0 +1,100 @@
+
+/*gender radio buttons*/
+  .guy{
+    margin-left: 60px;
+  }
+  .girl{
+    margin-right: 60px;
+  }
+/* end gender radio buttons*/
+
+
+
+/*form error styling*/
+
+#form-errors {
+      margin-top: 0px;
+      padding-top: 1px;
+      margin-bottom: 0px;
+}
+
+
+.error-handling-form{
+      height:65px;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+
+}
+
+
+/*end form error styling*/
+
+
+
+
+
+
+/*Input box placeholder Styling*/
+
+
+::-webkit-input-placeholder {
+ font-size: 14px;
+ color: #d0cdfa;
+ text-transform: uppercase;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+}
+:-moz-placeholder { /* older Firefox*/
+ font-size:14px;
+ color: #d0cdfa;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+
+}
+::-moz-placeholder { /* Firefox 19+ */
+ font-size: 14px;
+ color: #d0cdfa;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+
+}
+:-ms-input-placeholder {
+ font-size: 14px;
+ color: #d0cdfa;
+ text-transform: uppercase;
+ text-align: center;
+ font-weight: bold;
+ font-style: italic;
+
+}
+/*End Input box placeholder Styling*/
+
+/*center aligns labels on form*/
+.question{
+  text-align: center;
+}
+/*center aligns labels on form*/
+
+.state-placeholder{
+  font-size: 14px;
+  color: #d0cdfa;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.hidden-gpa{
+  visibility: hidden;
+}
+
+#moneyForm{
+  padding-bottom: 60px;
+}

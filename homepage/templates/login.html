@@ -1,0 +1,47 @@
+<%inherit file="base.htm" />
+
+<%block name="nav">
+  <!-- _________________________this bloc removes the navbar_____________________________ -->
+</%block>
+
+
+<%block name="content">
+
+  <!-- _________________________Heading_____________________________ -->
+  <div class="container">
+    <div class="row">
+      <div class="heading">
+        <h1>Lure</h1>
+      </div>
+    </div>
+    <div class="row heading">
+      <div class="col-sm-12">
+        <h2>We've missed you, almost as much as our recruiters have, welcome back</h2>
+      </div>
+    </div>
+    <div class="row">
+      <form action="/homepage/login/"  method="POST">
+        <p class="login-errors">
+          %for error in form.non_field_errors():
+              ${error}
+          %endfor
+        </p>
+        <div class="form-group" >
+          ${form['email']}
+          <p class="help-block"> ${form['email'].errors}</p>
+        </div>
+
+        <div class="form-group">
+          ${form['password']}
+          <p class="help-block">  ${form['password'].errors}</p>
+        </div>
+        <button  class="btn btn-default">Submit</button>
+      </form>
+      <a href="#">Forgot my password</a>
+      <br>
+      <a href="#">Send me another confirmation link</a>
+    </div>
+  </div>
+
+
+</%block>
